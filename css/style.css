@@ -20,6 +20,17 @@ header{
     height: 100px;
 }
 
+.image_container{
+    text-align: center;
+}
+
+.imagenes_titulo{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+
 .logo{
     cursor: pointer;
     height: 160px;
@@ -149,8 +160,9 @@ button:hover{
     background-color: #fff;
     margin: auto;
     width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
     text-align: center;
@@ -302,38 +314,16 @@ button:hover{
     height: 100%;
 }
 
-@media only screen and (max-width: 1280px) {
-    .image-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.footer-container {
-    background: color #373738;
-    padding-bottom: 4rem;
-}
-
-.footer {
-    width: 100%;
-    height: fit-content;
-    padding: 2rem;
-    background-color: #373738;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    position: absolute;
+footer {
+    background-color: #4b4b50;
+    margin: auto;
+    padding: 1rem;
 }
 
 .footer-heading {
     display: flex;
     flex-direction: column;
     margin-right: 4rem;
-}
-
-.footer-heading h2 {
-    margin-bottom: 2rem;
 }
 
 .footer-heading a {
@@ -360,6 +350,14 @@ button:hover{
     padding-left: 0.5rem;
     font-size: 1rem;
     margin-bottom: 1rem;
+    transition: height 2s;
+    transition: height 2s, width 1s;
+    transition: all 2s;
+}
+
+#footer-email:hover{
+    height: 50px;
+    width: 260px;
 }
 
 #footer-email::placerholder {
@@ -381,4 +379,41 @@ button:hover{
     cursor: pointer;
     background-color: #337Af1;
     transition: all 0.4s ease-out;
+}
+
+@media (min-width:700px) {
+    .container_index{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .image_container{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .imagenes_titulo{
+        padding: 2rem;
+        max-width: 300px;
+    }
+    .container_footer{
+        display: flex;
+        flex-direction: row;    
+        justify-content: center;   
+        padding: 2rem;
+    }
+    .footer-email-form{
+        padding: 2rem;
+        color: #000000;
+    }
+    .form{
+        background-color: #fff;
+        width: 90%;
+        max-width: 400px;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    }
+    .form_title{
+        font-size: 1.8rem;
+    }
 }
