@@ -33,7 +33,7 @@ header{
 
 .logo{
     cursor: pointer;
-    height: 160px;
+    height: 100px;
 }
 
 .nav_links li{
@@ -415,5 +415,18 @@ footer {
     }
     .form_title{
         font-size: 1.8rem;
+    }
+    .maps_sucursales{
+        width: 70%;
+        height: 500px;
+        display: flex;
+        flex-direction: auto;
+        justify-content: center;
+        padding: 2rem;
+        background-color: #b1b1b1;
+    }
+    .footer{
+        width: 100%;
+        height: auto;
     }
 }
