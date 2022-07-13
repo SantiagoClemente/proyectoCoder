@@ -245,12 +245,6 @@ button:hover{
     transform: scale(1);
 }
 
-@media (max-width:425px) {
-    .form_title{
-        font-size: 1.8rem;
-    }
-}
-
 .titulo_sucursales{
     color: #030303;
     background-color: rgb(23, 127, 196);
@@ -273,24 +267,15 @@ button:hover{
     padding: 100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-}
-.sabores li{
-    list-style-type: none;
-    padding: 10px 0;
-    font-size: 30px;
-}
-
-.sabores h2{
-    font-size: 70px;
-    margin: 0 0 100px 0;
-}
-
-.mejoreshelados-container{
-    background-color: #fdcae1;
-}
-
-.promos-container{
-    background-color: #fdcae1;
+    li{
+        list-style-type: none;
+        padding: 10px 0;
+        font-size: 30px;
+        h2{
+            font-size: 70px;
+            margin: 0 0 100px 0;
+        }
+    }
 }
 
 .promos{ background-color: rgb(226, 126, 196); 
@@ -323,18 +308,17 @@ footer {
     display: flex;
     flex-direction: column;
     margin-right: 4rem;
+    a{
+        color: rgb(248, 248, 248);
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        a:hover{
+            color: red;
+            transition: 0.3s ease ease-out;
+        }
+    }
 }
 
-.footer-heading a {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-}
-
-.footer-heading a:hover {
-    color: red;
-    transition: 0.3s ease ease-out;
-}
 
 .footer-email-form h2 {
     margin-bottom: 2rem;
@@ -359,7 +343,7 @@ footer {
     width: 260px;
 }
 
-#footer-email::placerholder {
+#footer-email::placeholder {
     color: #b1b1b1;
 }
 
@@ -372,12 +356,6 @@ footer {
     border: none;
     color: #fff;
     font-size: 1rem;
-}
-
-#footer-email-btn:hover {
-    cursor: pointer;
-    background-color: #337Af1;
-    transition: all 0.4s ease-out;
 }
 
 @media (min-width:700px) {
@@ -427,5 +405,8 @@ footer {
     .footer{
         width: 100%;
         height: auto;
+    }
+    .form_title{
+    font-size: 1.8rem;
     }
 }
