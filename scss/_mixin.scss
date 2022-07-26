@@ -1,0 +1,12 @@
+@mixin categorias {
+    background-repeat: repeat;
+    background-size: contain;
+    height: 200px;
+    color: white;
+    font-size: 20px;
+        text-shadow:
+            0.07em 0 $color-categorias,
+            0 0.07em $color-categorias,
+            -0.07em 0 $color-categorias,
+            0 -0.07em $color-categorias;
+}

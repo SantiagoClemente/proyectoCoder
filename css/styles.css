@@ -1,3 +1,18 @@
+/* MAPS */
+.facebook {
+  color: red;
+}
+
+.instagram {
+  color: blue;
+}
+
+.twitter {
+  color: yellow;
+}
+
+/* Variables */
+/* Estilos generales */
 * {
   margin: 0%;
   padding: 0%;
@@ -11,15 +26,6 @@ li, a, button {
   text-decoration: none;
 }
 
-/*
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #000000;
-    height: 100px;
-}*/
 .image_container {
   text-align: center;
   background-color: #5f5f68;
@@ -74,7 +80,7 @@ button:hover {
   background-color: rgb(226, 126, 196);
   font-size: 24px;
   text-align: center;
-  color: #000000;
+  color: black;
 }
 
 .container_categorias {
@@ -85,7 +91,7 @@ button:hover {
           text-decoration-color: rgba(232, 238, 241, 0.4117647059);
 }
 
-.tradicionales_categorias {
+.tradicionales_categorias, .otros_categorias, .grandesSabores_categorias {
   background-image: url("/img/palitoHelado.jpg");
   background-repeat: repeat;
   background-size: contain;
@@ -97,22 +103,10 @@ button:hover {
 
 .grandesSabores_categorias {
   background-image: url("/img/1kgdehlado.jpg");
-  background-repeat: repeat;
-  background-size: contain;
-  height: 200px;
-  color: white;
-  font-size: 20px;
-  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 }
 
 .otros_categorias {
-  background: url("/img/brownieHelado.jpg");
-  background-repeat: repeat;
-  background-size: contain;
-  height: 200px;
-  color: white;
-  font-size: 20px;
-  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  background-image: url("/img/brownieHelado.jpg");
 }
 
 .tortasHeladas_categorias {
@@ -134,7 +128,7 @@ button:hover {
 }
 
 .form_link {
-  color: #000000;
+  color: black;
   font-weight: 400;
 }
 
@@ -251,11 +245,6 @@ button:hover {
   transform: scale(1);
 }
 
-@media (max-width: 425px) {
-  .form_title {
-    font-size: 1.8rem;
-  }
-}
 .titulo_sucursales {
   color: #030303;
   background-color: rgb(23, 127, 196);
@@ -279,14 +268,12 @@ button:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
-
 .sabores li {
   list-style-type: none;
   padding: 10px 0;
   font-size: 30px;
 }
-
-.sabores h2 {
+.sabores li h2 {
   font-size: 70px;
   margin: 0 0 100px 0;
 }
@@ -294,8 +281,7 @@ button:hover {
 .mejoreshelados-container {
   background-color: #fdcae1;
 }
-
-.promos-container {
+.mejoreshelados-container .promos-container {
   background-color: #fdcae1;
 }
 
@@ -435,5 +421,8 @@ footer {
   .footer {
     width: 100%;
     height: auto;
+  }
+  .form_title {
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=styles.css.map */
