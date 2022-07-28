@@ -32,6 +32,13 @@ button {
     padding-top: 1rem;
 }
 
+.w-40 {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
     cursor: pointer;
     height: 100px;
@@ -359,6 +366,12 @@ footer {
     transition: all 0.4s ease-out;
 }
 
+.carousel-inner .item a img {
+
+    margin: auto;
+    
+    }
+
 @media (min-width:700px) {
     .container_index {
         display: grid;
@@ -418,5 +431,13 @@ footer {
 
     .form_title {
         font-size: 1.8rem;
+    }
+
+    .w-40 {
+        width: 120px;
+        height: 108px;
+        overflow: hidden;
+        border: thin solid #DADADA;
+        background-color: white;
     }
 }
