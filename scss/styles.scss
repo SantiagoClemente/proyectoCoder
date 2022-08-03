@@ -33,7 +33,11 @@ button {
     padding-top: 1rem;
 }
 
-.mostrador{
+ul {
+    list-style-type: none;
+}
+
+.mostrador {
     width: 50%;
 }
 
@@ -59,12 +63,20 @@ button {
 }
 
 .carousel-item {
-    height: 53rem;
+    height: auto;
     background-color: #777;
     color: white;
     position: relative;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #000000;
+    padding-top: 20px;
 }
 
 .logo {
@@ -269,7 +281,7 @@ button:hover {
     text-align: center;
 }
 
-.sucursal1{
+.sucursal1 {
     display: flex;
 }
 
@@ -307,6 +319,8 @@ button:hover {
 
     .promos-container {
         background-color: #fdcae1;
+        overflow-x: auto;
+        height: auto;
     }
 }
 
@@ -417,6 +431,7 @@ footer {
 
     .image_container {
         display: flex;
+        justify-content: center;
         flex-direction: row;
         text-align: center;
     }
