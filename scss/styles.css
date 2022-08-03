@@ -31,6 +31,7 @@ button {
 .image_container {
   text-align: center;
   background-color: #5f5f68;
+  overflow-x: auto;
 }
 
 .imagenes_titulo {
@@ -40,11 +41,38 @@ button {
   padding-top: 1rem;
 }
 
-.w-40 {
-  margin: 1rem;
+.mostrador {
+  width: 50%;
+}
+
+.mostrador-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #4b4b50;
+}
+
+.comentario-mostrador {
+  display: flex;
+  margin: auto;
+  background-color: #4b4b50;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+}
+
+.mostrador-comentario {
+  color: rgba(227, 228, 236, 0.631372549);
+  display: flex;
+  background-color: #4b4b50;
+}
+
+.carousel-item {
+  height: 53rem;
+  background-color: #777;
+  color: white;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .logo {
@@ -266,6 +294,10 @@ button:hover {
   text-align: center;
 }
 
+.sucursal1 {
+  display: flex;
+}
+
 .sabores_clasicos {
   background: #71b9ec;
 }
@@ -315,6 +347,10 @@ button:hover {
   -moz-column-gap: 40px;
        column-gap: 40px;
   padding: 30px 0;
+}
+.image-container .image-container > * {
+  width: 100%;
+  height: 100%;
 }
 
 .image-container > * {
@@ -443,12 +479,5 @@ footer {
   }
   .form_title {
     font-size: 1.8rem;
-  }
-  .w-40 {
-    width: 120px;
-    height: 108px;
-    overflow: hidden;
-    border: thin solid #DADADA;
-    background-color: white;
   }
 }/*# sourceMappingURL=styles.css.map */

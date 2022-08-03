@@ -3,7 +3,7 @@
 
 <head>
    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="scss/styles.css">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav">
                   <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                     <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="paginas/categorias.html">Categorias</a>
@@ -48,14 +48,27 @@
    <!--Fin Header-->
    <main class="container_index">
       <div>
+         <!--Inicio carrusel-->
+         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img src="img/cucuruchos2.jpg" class="d-block w-100" alt="cucuruchos2">
+               </div>
+               <div class="carousel-item">
+                  <img src="img/cucurucho3.jpg" class="d-block w-100" alt="cucuruchos3">
+               </div>
+            </div>
+         </div>
+         <!--Fin de carrusel-->
+         <!--Muestra de productos-->
          <div class="headertitulo">Los mejores helados al mejor precio</div>
          <div class="image_container">
             <div class="col">
-               <img class="imagenes_titulo" src="img/brownieconhelado1.jpg" alt="1/4 de Kilo">
-               <img class="imagenes_titulo" src="img/candyHelado.jpg" alt="Mediokilo">
-               <img class="imagenes_titulo" src="img/capelina.jpg" alt="3/4 de kilo">
+               <img class="imagenes_titulo" src="img/1_4kg.jpg" alt="1/4 de Kilo">
+               <img class="imagenes_titulo" src="img/Helado-1.2-kg-300x300.jpg" alt="Mediokilo">
+               <img class="imagenes_titulo" src="img/Helado-1-kg-300x300.jpg" alt="1 kilo">
                <img class="imagenes_titulo" src="img/tortaOreo1.jpg" alt="kilo">
-               <img class="imagenes_titulo" src="img/cucurucho.jpg" alt="kiloymedio">
+               <img class="imagenes_titulo" src="img/capelina.jpg" alt="kiloymedio">
             </div>
          </div>
          <!--Inicio carrusel-->
@@ -68,30 +81,16 @@
                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                   aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-               <div class="carousel-item negro active">
-                  <img src="img/1 kg.jpeg" class="w-40" alt="...">
-                  <img src="img/1 kg.jpeg" class="w-40" alt="...">
-                  <img src="img/1 kg.jpeg" class="w-40" alt="...">
-                  <img src="img/1 kg.jpeg" class="w-40" alt="...">
-                  <img src="img/1 kg.jpeg" class="w-40" alt="...">
-                  <img src="img/1 kg.jpeg" class="w-40" alt="...">
-               </div>
-               <div class="carousel-item">
-                  <img src="img/1_2 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_2 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_2 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_2 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_2 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_2 kg.jpg" class="w-40" alt="...">
-               </div>
-               <div class="carousel-item">
-                  <img src="img/1_4 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_4 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_4 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_4 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_4 kg.jpg" class="w-40" alt="...">
-                  <img src="img/1_4 kg.jpg" class="w-40" alt="...">
+            <div class="container-fluid">
+               <div class="row row-cols-xs-2 row-cols-sm-1 rows-cols-xxl-1">
+                  <div class="carousel-inner">
+                     <div class="carousel-item negro active">
+                        <img src="img/promoSmart.png" class="w-100" alt="promo smart">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="img/promo.png" class="w-100" alt="promo kilo">
+                     </div>
+                  </div>
                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -106,18 +105,31 @@
             </button>
          </div>
          <!--Fin carrusel-->
+         <div>
+            <div class="mostrador-container">
+               <div class="comentario-mostrador">
+                  <h2 class="mostrador-comentario">Productos de primerisima calidad desde 1997</h2>
+               </div>
+               <img src="img/mostrador.jpg" class="mostrador" alt="mostrador">
+            </div>
+         </div>
+         <!--Fin muestra de productos-->
+
       </div>
       <!--Promociones-->
       <div class="promos_container">
          <div class="promos">Promociones</div>
          <div class="image_container">
-            <img class="imagenes_titulo" src="img/promo.png" alt="promo">
-            <img class="imagenes_titulo" src="img/promocucurucho.png" alt="promocucurucho">
-            <img class="imagenes_titulo" src="img/promoSmart.png" alt="promosmart">
+            <img class="imagenes_titulo" src="img/1 kg.jpeg" alt="1 kg">
+            <img class="imagenes_titulo" src="img/1_2 kg.jpg" alt="1/2 kg">
+            <img class="imagenes_titulo" src="img/1_4 kg.jpg" alt="1/4 kg">
+            <img class="imagenes_titulo" src="img/3_4 kg.jpg" alt="3/4 kg">
+            <img class="imagenes_titulo" src="img/smart y medio.jpg" alt="1 kg y medio">
          </div>
          <!--Fin Promociones-->
       </div>
    </main>
+   <!--Footer-->
    <footer>
       <section class="container_footer">
          <div class="footer-heading footer-1">
@@ -145,7 +157,7 @@
          </div>
       </section>
    </footer>
-   </section>
+   <!--Fin de footer-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
