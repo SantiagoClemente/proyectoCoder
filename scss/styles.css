@@ -304,10 +304,7 @@ button:hover {
   color: #030303;
   background-color: rgb(23, 127, 196);
   text-align: center;
-}
-
-.sucursal1 {
-  display: flex;
+  width: auto;
 }
 
 .sabores_clasicos {
